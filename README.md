@@ -1,7 +1,7 @@
 Welcome To: LeoEc Hardware Repo!!
 ================================
 
-##### Note: This is for the LeoEc Hardware Version 1 Branch
+##### Note: This is for the LeoEc Hardware Version 1.1 Branch
 
 LeoEc Hardware Design Files in EAGLE. Not much to say, there are some custom parts will add Library after I clean it up!
 
@@ -14,6 +14,7 @@ Schematic Info
 - AC output rectification for input into uC
 - uC controller subsection
 - reverse voltage protection
+- add addition Atmega32u4-Mu IC to account for chip shortages
 
 Board Layout Info
 -------------------------
@@ -23,6 +24,7 @@ Board Layout Info
 - Wein Osc should be at least 1kHz, preferable with AGC but this design seems stable at most common temp range 
 - Leonardo Digital Header (Pin matching)
 - Leonardo Analog Header (Pin matching)
+- add addition Atmega32u4-Mu IC to account for chip shortages
 
 Errata
 -------------------------
@@ -64,7 +66,7 @@ There are 2 serial ports one for the USB and one is the hardware serial port(Tx,
 - R : Single eC reading: response "eC: XX.XX" where XX.XX is the eC
 - E : Exit continuous read mode
 - S : set eC1 Calibration point
-- F : set eC2 Calibration point: also relalcs probe slope and saves settings to EEPROM
+- F : set eC2 Calibration point: also recalcs probe slope and saves settings to EEPROM
 - T : set eC3 Calibration point: also recalcs probe slope and saves settings to EEPROM 
 - X : restore settings to default and ideal probe conditions
 
