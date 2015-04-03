@@ -8822,10 +8822,10 @@ of QFP shortages at supplier</text>
 <instance part="U$1" gate="G$1" x="0" y="0"/>
 <instance part="U$1" gate="G$2" x="158.75" y="3.81"/>
 <instance part="U$2" gate="G$1" x="224.282" y="10.414"/>
-<instance part="JP5" gate="G$1" x="63.5" y="157.48" rot="R180"/>
-<instance part="P+5" gate="1" x="38.1" y="154.94" rot="R90"/>
-<instance part="GND11" gate="1" x="53.34" y="162.56" rot="R180"/>
-<instance part="T1" gate="A" x="48.26" y="154.94" rot="R90"/>
+<instance part="JP5" gate="G$1" x="30.48" y="154.94"/>
+<instance part="P+5" gate="1" x="60.96" y="157.48" rot="R270"/>
+<instance part="GND11" gate="1" x="38.1" y="147.32"/>
+<instance part="T1" gate="A" x="48.26" y="157.48" rot="R90"/>
 <instance part="P+1" gate="1" x="30.226" y="109.22" rot="R90"/>
 <instance part="P-1" gate="1" x="30.226" y="114.3" rot="R270"/>
 <instance part="GND1" gate="1" x="37.846" y="96.52"/>
@@ -8938,11 +8938,6 @@ of QFP shortages at supplier</text>
 <nets>
 <net name="+5V" class="0">
 <segment>
-<wire x1="40.64" y1="154.94" x2="43.18" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="P+5" gate="1" pin="+5V"/>
-<pinref part="T1" gate="A" pin="D"/>
-</segment>
-<segment>
 <wire x1="45.466" y1="109.22" x2="37.846" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="37.846" y1="109.22" x2="32.766" y2="109.22" width="0.1524" layer="91"/>
 <junction x="37.846" y="109.22"/>
@@ -9042,15 +9037,18 @@ of QFP shortages at supplier</text>
 <wire x1="200.66" y1="119.38" x2="200.66" y2="121.92" width="0.1524" layer="91"/>
 <junction x="200.66" y="121.92"/>
 </segment>
+<segment>
+<pinref part="T1" gate="A" pin="S"/>
+<pinref part="P+5" gate="1" pin="+5V"/>
+<wire x1="53.34" y1="157.48" x2="58.42" y2="157.48" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
-<wire x1="53.34" y1="160.02" x2="55.88" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="160.02" x2="55.88" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="160.02" x2="35.56" y2="160.02" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="160.02" x2="35.56" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="149.86" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
-<junction x="53.34" y="160.02"/>
+<wire x1="38.1" y1="149.86" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="149.86" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="149.86" x2="50.8" y2="152.4" width="0.1524" layer="91"/>
+<junction x="38.1" y="149.86"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="JP5" gate="G$1" pin="1"/>
 <pinref part="T1" gate="A" pin="G"/>
@@ -9209,13 +9207,6 @@ of QFP shortages at supplier</text>
 <junction x="203.2" y="76.2"/>
 <label x="203.2" y="78.74" size="1.778" layer="95"/>
 <pinref part="GND17" gate="1" pin="GND"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<wire x1="53.34" y1="154.94" x2="55.88" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="T1" gate="A" pin="S"/>
-<pinref part="JP5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="-5V" class="0">
@@ -9888,6 +9879,13 @@ of QFP shortages at supplier</text>
 <wire x1="144.78" y1="127" x2="139.7" y2="127" width="0.1524" layer="91"/>
 <pinref part="U1" gate="A" pin="UCAP"/>
 <pinref part="C11" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="JP5" gate="G$1" pin="2"/>
+<pinref part="T1" gate="A" pin="D"/>
+<wire x1="38.1" y1="157.48" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
